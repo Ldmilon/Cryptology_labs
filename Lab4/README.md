@@ -1,1 +1,4 @@
-
+Fourth lab realization Linear congruential generator (Lehmer generator) and statistical randomness tests
+There are functions like:
+genenarator_Lemera - Generates pseudo-random numbers using the Lehmer (linear congruential) generator. Uses the formula: Xₙ = (a·Xₙ₋₁ + c) mod m. User inputs parameters m, a, c, and x0. Generates a sequence of 625 numbers and saves them to a file Lemera.txt.
+test - Performs statistical testing of the generated pseudo-random sequence. Includes several steps: Converts numbers from Lemera.txt into 32-bit binary format and saves them to Bits.txt, Counts the number of 1 bits and performs a frequency (monobit) test, Splits the bit sequence into 4-bit blocks and writes them into SecondBits.txt, Counts occurrences of all possible 4-bit combinations (0000–1111) and saves results to Count.txt, Calculates a statistical value based on frequencies, Determines whether the sequence passes or fails randomness tests.
